@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC5DA20815DDD6BA004A3B47 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5DA20715DDD6BA004A3B47 /* UIKit.framework */; };
+		EC5DA20A15DDD6BA004A3B47 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5DA20915DDD6BA004A3B47 /* Foundation.framework */; };
+		EC5DA20C15DDD6BA004A3B47 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5DA20B15DDD6BA004A3B47 /* CoreGraphics.framework */; };
+		EC5DA21215DDD6BA004A3B47 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC5DA21015DDD6BA004A3B47 /* InfoPlist.strings */; };
+		EC5DA21415DDD6BA004A3B47 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5DA21315DDD6BA004A3B47 /* main.m */; };
+		EC5DA21815DDD6BA004A3B47 /* AMMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5DA21715DDD6BA004A3B47 /* AMMAppDelegate.m */; };
+		EC5DA21B15DDD6BA004A3B47 /* AMMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5DA21A15DDD6BA004A3B47 /* AMMViewController.m */; };
+		EC5DA21E15DDD6BA004A3B47 /* AMMViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC5DA21C15DDD6BA004A3B47 /* AMMViewController_iPhone.xib */; };
+		EC5DA22115DDD6BA004A3B47 /* AMMViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC5DA21F15DDD6BA004A3B47 /* AMMViewController_iPad.xib */; };
+		EC5DA26815DDE5F4004A3B47 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5DA26715DDE5F4004A3B47 /* CFNetwork.framework */; };
+		EC5DA26A15DDE5FD004A3B47 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5DA26915DDE5FD004A3B47 /* CoreData.framework */; };
+		EC5DA26C15DDE607004A3B47 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5DA26B15DDE607004A3B47 /* MobileCoreServices.framework */; };
+		EC5DA26E15DDE614004A3B47 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5DA26D15DDE614004A3B47 /* SystemConfiguration.framework */; };
+		EC5DA27015DDE623004A3B47 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5DA26F15DDE623004A3B47 /* libxml2.dylib */; };
+		EC5DA27215DDE637004A3B47 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5DA27115DDE637004A3B47 /* QuartzCore.framework */; };
+		EC5DA27815DDF041004A3B47 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5DA25D15DDD7AC004A3B47 /* libRestKit.a */; };
+		EC5DA27E15DE9DF0004A3B47 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5DA27D15DE9DF0004A3B47 /* Security.framework */; };
+		EC5DA28115DEA149004A3B47 /* AMMActivityType.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5DA28015DEA149004A3B47 /* AMMActivityType.m */; };
+		EC5DA2A215E04020004A3B47 /* AbstractActionSheetPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5DA29615E04020004A3B47 /* AbstractActionSheetPicker.m */; };
+		EC5DA2A315E04020004A3B47 /* ActionSheetCustomPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5DA29815E04020004A3B47 /* ActionSheetCustomPicker.m */; };
+		EC5DA2A415E04020004A3B47 /* ActionSheetDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5DA29B15E04020004A3B47 /* ActionSheetDatePicker.m */; };
+		EC5DA2A515E04020004A3B47 /* ActionSheetDistancePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5DA29D15E04020004A3B47 /* ActionSheetDistancePicker.m */; };
+		EC5DA2A615E04020004A3B47 /* ActionSheetStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5DA29F15E04020004A3B47 /* ActionSheetStringPicker.m */; };
+		EC5DA2A715E04020004A3B47 /* DistancePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5DA2A115E04020004A3B47 /* DistancePickerView.m */; };
+		ECB97E8615F539E700551520 /* AMMLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB97E8415F539E700551520 /* AMMLoginViewController.m */; };
+		ECB97E8715F539E700551520 /* AMMLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECB97E8515F539E700551520 /* AMMLoginViewController.xib */; };
+		ECB97E8E15F5917E00551520 /* Keychain.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB97E8C15F5917E00551520 /* Keychain.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC5DA25C15DDD7AC004A3B47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC5DA25115DDD7AC004A3B47 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D1614564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+		EC5DA25E15DDD7AC004A3B47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC5DA25115DDD7AC004A3B47 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D2614564E820060A5C5;
+			remoteInfo = RestKitTests;
+		};
+		EC5DA26015DDD7AC004A3B47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC5DA25115DDD7AC004A3B47 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E62145651060060A5C5;
+			remoteInfo = RestKitFramework;
+		};
+		EC5DA26215DDD7AC004A3B47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC5DA25115DDD7AC004A3B47 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E78145651060060A5C5;
+			remoteInfo = RestKitFrameworkTests;
+		};
+		EC5DA26415DDD7AC004A3B47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC5DA25115DDD7AC004A3B47 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 259C301615128079003066A2;
+			remoteInfo = RestKitResources;
+		};
+		EC5DA27B15DE9CE4004A3B47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC5DA25115DDD7AC004A3B47 /* RestKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 25160D1514564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC5DA20315DDD6BA004A3B47 /* AllMyMiles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllMyMiles.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC5DA20715DDD6BA004A3B47 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EC5DA20915DDD6BA004A3B47 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EC5DA20B15DDD6BA004A3B47 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EC5DA20F15DDD6BA004A3B47 /* AllMyMiles-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AllMyMiles-Info.plist"; sourceTree = "<group>"; };
+		EC5DA21115DDD6BA004A3B47 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EC5DA21315DDD6BA004A3B47 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EC5DA21515DDD6BA004A3B47 /* AllMyMiles-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AllMyMiles-Prefix.pch"; sourceTree = "<group>"; };
+		EC5DA21615DDD6BA004A3B47 /* AMMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMMAppDelegate.h; sourceTree = "<group>"; };
+		EC5DA21715DDD6BA004A3B47 /* AMMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMMAppDelegate.m; sourceTree = "<group>"; };
+		EC5DA21915DDD6BA004A3B47 /* AMMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMMViewController.h; sourceTree = "<group>"; };
+		EC5DA21A15DDD6BA004A3B47 /* AMMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMMViewController.m; sourceTree = "<group>"; };
+		EC5DA21D15DDD6BA004A3B47 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AMMViewController_iPhone.xib; sourceTree = "<group>"; };
+		EC5DA22015DDD6BA004A3B47 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AMMViewController_iPad.xib; sourceTree = "<group>"; };
+		EC5DA25115DDD7AC004A3B47 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = ../RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
+		EC5DA26715DDE5F4004A3B47 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		EC5DA26915DDE5FD004A3B47 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		EC5DA26B15DDE607004A3B47 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		EC5DA26D15DDE614004A3B47 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EC5DA26F15DDE623004A3B47 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		EC5DA27115DDE637004A3B47 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EC5DA27D15DE9DF0004A3B47 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		EC5DA27F15DEA149004A3B47 /* AMMActivityType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMMActivityType.h; sourceTree = "<group>"; };
+		EC5DA28015DEA149004A3B47 /* AMMActivityType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMMActivityType.m; sourceTree = "<group>"; };
+		EC5DA29315E04020004A3B47 /* ActionSheetPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionSheetPicker.h; path = "../../../../Downloads/Club15CC-ActionSheetPicker-a5ffb4b/ActionSheetPicker.h"; sourceTree = "<group>"; };
+		EC5DA29515E04020004A3B47 /* AbstractActionSheetPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractActionSheetPicker.h; sourceTree = "<group>"; };
+		EC5DA29615E04020004A3B47 /* AbstractActionSheetPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractActionSheetPicker.m; sourceTree = "<group>"; };
+		EC5DA29715E04020004A3B47 /* ActionSheetCustomPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetCustomPicker.h; sourceTree = "<group>"; };
+		EC5DA29815E04020004A3B47 /* ActionSheetCustomPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetCustomPicker.m; sourceTree = "<group>"; };
+		EC5DA29915E04020004A3B47 /* ActionSheetCustomPickerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetCustomPickerDelegate.h; sourceTree = "<group>"; };
+		EC5DA29A15E04020004A3B47 /* ActionSheetDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetDatePicker.h; sourceTree = "<group>"; };
+		EC5DA29B15E04020004A3B47 /* ActionSheetDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetDatePicker.m; sourceTree = "<group>"; };
+		EC5DA29C15E04020004A3B47 /* ActionSheetDistancePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetDistancePicker.h; sourceTree = "<group>"; };
+		EC5DA29D15E04020004A3B47 /* ActionSheetDistancePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetDistancePicker.m; sourceTree = "<group>"; };
+		EC5DA29E15E04020004A3B47 /* ActionSheetStringPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetStringPicker.h; sourceTree = "<group>"; };
+		EC5DA29F15E04020004A3B47 /* ActionSheetStringPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetStringPicker.m; sourceTree = "<group>"; };
+		EC5DA2A015E04020004A3B47 /* DistancePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistancePickerView.h; sourceTree = "<group>"; };
+		EC5DA2A115E04020004A3B47 /* DistancePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistancePickerView.m; sourceTree = "<group>"; };
+		EC68615A15F59268008C3C13 /* Keychain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Keychain.h; sourceTree = "<group>"; };
+		ECB97E8315F539E700551520 /* AMMLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMMLoginViewController.h; sourceTree = "<group>"; };
+		ECB97E8415F539E700551520 /* AMMLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMMLoginViewController.m; sourceTree = "<group>"; };
+		ECB97E8515F539E700551520 /* AMMLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AMMLoginViewController.xib; sourceTree = "<group>"; };
+		ECB97E8C15F5917E00551520 /* Keychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Keychain.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC5DA20015DDD6BA004A3B47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC5DA27E15DE9DF0004A3B47 /* Security.framework in Frameworks */,
+				EC5DA27815DDF041004A3B47 /* libRestKit.a in Frameworks */,
+				EC5DA27215DDE637004A3B47 /* QuartzCore.framework in Frameworks */,
+				EC5DA27015DDE623004A3B47 /* libxml2.dylib in Frameworks */,
+				EC5DA26E15DDE614004A3B47 /* SystemConfiguration.framework in Frameworks */,
+				EC5DA26C15DDE607004A3B47 /* MobileCoreServices.framework in Frameworks */,
+				EC5DA26A15DDE5FD004A3B47 /* CoreData.framework in Frameworks */,
+				EC5DA26815DDE5F4004A3B47 /* CFNetwork.framework in Frameworks */,
+				EC5DA20815DDD6BA004A3B47 /* UIKit.framework in Frameworks */,
+				EC5DA20A15DDD6BA004A3B47 /* Foundation.framework in Frameworks */,
+				EC5DA20C15DDD6BA004A3B47 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC5DA1F815DDD6BA004A3B47 = {
+			isa = PBXGroup;
+			children = (
+				EC5DA27D15DE9DF0004A3B47 /* Security.framework */,
+				EC5DA27115DDE637004A3B47 /* QuartzCore.framework */,
+				EC5DA26F15DDE623004A3B47 /* libxml2.dylib */,
+				EC5DA26D15DDE614004A3B47 /* SystemConfiguration.framework */,
+				EC5DA26B15DDE607004A3B47 /* MobileCoreServices.framework */,
+				EC5DA26915DDE5FD004A3B47 /* CoreData.framework */,
+				EC5DA26715DDE5F4004A3B47 /* CFNetwork.framework */,
+				EC5DA25115DDD7AC004A3B47 /* RestKit.xcodeproj */,
+				EC5DA20D15DDD6BA004A3B47 /* AllMyMiles */,
+				EC5DA20615DDD6BA004A3B47 /* Frameworks */,
+				EC5DA20415DDD6BA004A3B47 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC5DA20415DDD6BA004A3B47 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC5DA20315DDD6BA004A3B47 /* AllMyMiles.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC5DA20615DDD6BA004A3B47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC5DA20715DDD6BA004A3B47 /* UIKit.framework */,
+				EC5DA20915DDD6BA004A3B47 /* Foundation.framework */,
+				EC5DA20B15DDD6BA004A3B47 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC5DA20D15DDD6BA004A3B47 /* AllMyMiles */ = {
+			isa = PBXGroup;
+			children = (
+				ECB97E8C15F5917E00551520 /* Keychain.m */,
+				EC5DA29315E04020004A3B47 /* ActionSheetPicker.h */,
+				EC5DA29415E04020004A3B47 /* Pickers */,
+				EC5DA21615DDD6BA004A3B47 /* AMMAppDelegate.h */,
+				EC5DA21715DDD6BA004A3B47 /* AMMAppDelegate.m */,
+				EC5DA21915DDD6BA004A3B47 /* AMMViewController.h */,
+				EC5DA21A15DDD6BA004A3B47 /* AMMViewController.m */,
+				ECB97E8315F539E700551520 /* AMMLoginViewController.h */,
+				ECB97E8415F539E700551520 /* AMMLoginViewController.m */,
+				ECB97E8515F539E700551520 /* AMMLoginViewController.xib */,
+				EC5DA21C15DDD6BA004A3B47 /* AMMViewController_iPhone.xib */,
+				EC5DA21F15DDD6BA004A3B47 /* AMMViewController_iPad.xib */,
+				EC5DA20E15DDD6BA004A3B47 /* Supporting Files */,
+				EC5DA27F15DEA149004A3B47 /* AMMActivityType.h */,
+				EC5DA28015DEA149004A3B47 /* AMMActivityType.m */,
+				EC68615A15F59268008C3C13 /* Keychain.h */,
+			);
+			path = AllMyMiles;
+			sourceTree = "<group>";
+		};
+		EC5DA20E15DDD6BA004A3B47 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC5DA20F15DDD6BA004A3B47 /* AllMyMiles-Info.plist */,
+				EC5DA21015DDD6BA004A3B47 /* InfoPlist.strings */,
+				EC5DA21315DDD6BA004A3B47 /* main.m */,
+				EC5DA21515DDD6BA004A3B47 /* AllMyMiles-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC5DA25215DDD7AC004A3B47 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC5DA25D15DDD7AC004A3B47 /* libRestKit.a */,
+				EC5DA25F15DDD7AC004A3B47 /* RestKitTests.octest */,
+				EC5DA26115DDD7AC004A3B47 /* RestKit.framework */,
+				EC5DA26315DDD7AC004A3B47 /* RestKitFrameworkTests.octest */,
+				EC5DA26515DDD7AC004A3B47 /* RestKitResources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC5DA29415E04020004A3B47 /* Pickers */ = {
+			isa = PBXGroup;
+			children = (
+				EC5DA29515E04020004A3B47 /* AbstractActionSheetPicker.h */,
+				EC5DA29615E04020004A3B47 /* AbstractActionSheetPicker.m */,
+				EC5DA29715E04020004A3B47 /* ActionSheetCustomPicker.h */,
+				EC5DA29815E04020004A3B47 /* ActionSheetCustomPicker.m */,
+				EC5DA29915E04020004A3B47 /* ActionSheetCustomPickerDelegate.h */,
+				EC5DA29A15E04020004A3B47 /* ActionSheetDatePicker.h */,
+				EC5DA29B15E04020004A3B47 /* ActionSheetDatePicker.m */,
+				EC5DA29C15E04020004A3B47 /* ActionSheetDistancePicker.h */,
+				EC5DA29D15E04020004A3B47 /* ActionSheetDistancePicker.m */,
+				EC5DA29E15E04020004A3B47 /* ActionSheetStringPicker.h */,
+				EC5DA29F15E04020004A3B47 /* ActionSheetStringPicker.m */,
+				EC5DA2A015E04020004A3B47 /* DistancePickerView.h */,
+				EC5DA2A115E04020004A3B47 /* DistancePickerView.m */,
+			);
+			name = Pickers;
+			path = "../../../../Downloads/Club15CC-ActionSheetPicker-a5ffb4b/Pickers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC5DA20215DDD6BA004A3B47 /* AllMyMiles */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC5DA22415DDD6BA004A3B47 /* Build configuration list for PBXNativeTarget "AllMyMiles" */;
+			buildPhases = (
+				EC5DA1FF15DDD6BA004A3B47 /* Sources */,
+				EC5DA20015DDD6BA004A3B47 /* Frameworks */,
+				EC5DA20115DDD6BA004A3B47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC5DA27C15DE9CE4004A3B47 /* PBXTargetDependency */,
+			);
+			name = AllMyMiles;
+			productName = AllMyMiles;
+			productReference = EC5DA20315DDD6BA004A3B47 /* AllMyMiles.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC5DA1FA15DDD6BA004A3B47 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AMM;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Tom Allen";
+			};
+			buildConfigurationList = EC5DA1FD15DDD6BA004A3B47 /* Build configuration list for PBXProject "AllMyMiles" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EC5DA1F815DDD6BA004A3B47;
+			productRefGroup = EC5DA20415DDD6BA004A3B47 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EC5DA25215DDD7AC004A3B47 /* Products */;
+					ProjectRef = EC5DA25115DDD7AC004A3B47 /* RestKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				EC5DA20215DDD6BA004A3B47 /* AllMyMiles */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		EC5DA25D15DDD7AC004A3B47 /* libRestKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKit.a;
+			remoteRef = EC5DA25C15DDD7AC004A3B47 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EC5DA25F15DDD7AC004A3B47 /* RestKitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitTests.octest;
+			remoteRef = EC5DA25E15DDD7AC004A3B47 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EC5DA26115DDD7AC004A3B47 /* RestKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RestKit.framework;
+			remoteRef = EC5DA26015DDD7AC004A3B47 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EC5DA26315DDD7AC004A3B47 /* RestKitFrameworkTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitFrameworkTests.octest;
+			remoteRef = EC5DA26215DDD7AC004A3B47 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EC5DA26515DDD7AC004A3B47 /* RestKitResources.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitResources.bundle;
+			remoteRef = EC5DA26415DDD7AC004A3B47 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC5DA20115DDD6BA004A3B47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC5DA21215DDD6BA004A3B47 /* InfoPlist.strings in Resources */,
+				EC5DA21E15DDD6BA004A3B47 /* AMMViewController_iPhone.xib in Resources */,
+				EC5DA22115DDD6BA004A3B47 /* AMMViewController_iPad.xib in Resources */,
+				ECB97E8715F539E700551520 /* AMMLoginViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC5DA1FF15DDD6BA004A3B47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC5DA21415DDD6BA004A3B47 /* main.m in Sources */,
+				EC5DA21815DDD6BA004A3B47 /* AMMAppDelegate.m in Sources */,
+				EC5DA21B15DDD6BA004A3B47 /* AMMViewController.m in Sources */,
+				EC5DA28115DEA149004A3B47 /* AMMActivityType.m in Sources */,
+				EC5DA2A215E04020004A3B47 /* AbstractActionSheetPicker.m in Sources */,
+				EC5DA2A315E04020004A3B47 /* ActionSheetCustomPicker.m in Sources */,
+				EC5DA2A415E04020004A3B47 /* ActionSheetDatePicker.m in Sources */,
+				EC5DA2A515E04020004A3B47 /* ActionSheetDistancePicker.m in Sources */,
+				EC5DA2A615E04020004A3B47 /* ActionSheetStringPicker.m in Sources */,
+				EC5DA2A715E04020004A3B47 /* DistancePickerView.m in Sources */,
+				ECB97E8615F539E700551520 /* AMMLoginViewController.m in Sources */,
+				ECB97E8E15F5917E00551520 /* Keychain.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC5DA27C15DE9CE4004A3B47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RestKit;
+			targetProxy = EC5DA27B15DE9CE4004A3B47 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC5DA21015DDD6BA004A3B47 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC5DA21115DDD6BA004A3B47 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EC5DA21C15DDD6BA004A3B47 /* AMMViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC5DA21D15DDD6BA004A3B47 /* en */,
+			);
+			name = AMMViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		EC5DA21F15DDD6BA004A3B47 /* AMMViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC5DA22015DDD6BA004A3B47 /* en */,
+			);
+			name = AMMViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC5DA22215DDD6BA004A3B47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC5DA22315DDD6BA004A3B47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC5DA22515DDD6BA004A3B47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AllMyMiles/AllMyMiles-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
+				INFOPLIST_FILE = "AllMyMiles/AllMyMiles-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EC5DA22615DDD6BA004A3B47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AllMyMiles/AllMyMiles-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
+				INFOPLIST_FILE = "AllMyMiles/AllMyMiles-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC5DA1FD15DDD6BA004A3B47 /* Build configuration list for PBXProject "AllMyMiles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC5DA22215DDD6BA004A3B47 /* Debug */,
+				EC5DA22315DDD6BA004A3B47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC5DA22415DDD6BA004A3B47 /* Build configuration list for PBXNativeTarget "AllMyMiles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC5DA22515DDD6BA004A3B47 /* Debug */,
+				EC5DA22615DDD6BA004A3B47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC5DA1FA15DDD6BA004A3B47 /* Project object */;
+}
